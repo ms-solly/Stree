@@ -20,7 +20,9 @@ const AdminLayout = React.lazy(() => import('./components/layouts/admin-layouts'
 const AdminIncidents = React.lazy(() => import('./pages/AdminIncidents'));
 const AdminContacts = React.lazy(() => import('./pages/AdminContacts'));
 const AdminUsers = React.lazy(() => import('./pages/AdminUsers'));
-
+const EditUser = React.lazy(() => import('./pages/EditUser')); // Import the EditUser component
+const EditIncident = React.lazy(() => import('./pages/EditIncident')); // Import the EditIncident component
+const EditContact = React.lazy(() => import('./pages/EditContact'));
 
 import Footer from './components/Footer';
 
@@ -30,11 +32,9 @@ import UserProfile from './pages/UserProfile';
 function App() {
   const location = useLocation();
   
-
   const noHeaderFooterRoutes = ['/login', '/register'];
 
   const shouldHideHeaderFooter = noHeaderFooterRoutes.includes(location.pathname);
-
 
   return (
     <div className="app-container">
@@ -43,12 +43,8 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/register" element={<RegisterForm />} /> */}
           <Route path="/register" element={<Register />} />
-
-          {/* <Route path="/login" element={<LoginForm />} /> */}
           <Route path="/login" element={<Login />} />
-
           <Route path="/logout" element={<Logout />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/helpline" element={<Helpline />} />
@@ -62,9 +58,14 @@ function App() {
             <Route path="incidents" element={<AdminIncidents />} />
             <Route path="users" element={<AdminUsers />} />
             <Route path="contacts" element={<AdminContacts />} />
+            <Route path="users/:id/edit" element={<EditUser />} /> {/* Dynamic route for editing users */}
+            <Route path="incidents/:id/edit" element={<EditIncident />} /> {/* Dynamic route for editing users */}
+            <Route path="contacts/:id/edit" element={<EditContact />} /> {/* Dynamic route for editing users */}
+
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
+
 
         {(!shouldHideHeaderFooter) ? <Footer /> : null} {/* Conditionally render Footer */}
       </Suspense>
@@ -79,4 +80,3 @@ export default function AppWrapper() {
     </Router>
   );
 }
-
