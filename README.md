@@ -222,20 +222,20 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ### Team Links
 <br>
 
-Riya Raj - [Riya Raj](https://linkedin.com/)
+Riya Raj - [Riya Raj](https://www.linkedin.com/in/riya-raj-799152281/)
 
 Profile Link: [https://github.com/RiyaRaj28](https://github.com/RiyaRaj28)
 <br>
 
 <br>
 
-Imrana Sumbul - [Imrana Sumbul](https://linkedin.com/)
+Imrana Sumbul - [Imrana Sumbul](https://www.linkedin.com/in/imrana-sumbul-b1853b282)
 
 Profile Link:[https://github.com/imranasumbul](https://github.com/imranasumbul)
 
 <br>
 
-Aditi Jogdand - [Aditi Jogdand](https://linkedin.com/)
+Aditi Jogdand - [Aditi Jogdand](https://www.linkedin.com/in/aditi-j-57b64526a/)
 
 Profile Link: [https://github.com/ms-solly](https://github.com/ms-solly)
 
